@@ -36,7 +36,9 @@ html::-webkit-scrollbar-thumb{
     border-radius: 5rem;
 }
 
-
+section#home1{
+	background-image: url(img/HSEFuc.jpg);
+}
 
 body{
     background: var(--bg);
@@ -88,10 +90,7 @@ a{
 .nav-link:hover{
     color: var(--main-color);
 }
-.hamburger{
-    display: none;
-    cursor: pointer;
-}
+
 .bar{
     display: block;
     width: 28px;
@@ -101,6 +100,209 @@ a{
     background-color: #fff;
     transition: all 0.3s ease-in-out;
 }
+
+section#HQS {
+	background-color: #000000;
+	padding: 40px 0;
+}
+
+/* criar duas colunas responsivas */
+#HQS {
+	background-color: #000000;
+	padding: 40px 0;
+	text-align: center;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2em;
+	color: #ff0000;
+	margin-bottom: 20px;
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.HQ {
+	width: 300px;
+	margin: 20px;
+	padding: 20px;
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease-in-out;
+}
+
+.livro:hover {
+	transform: scale(1.05);
+}
+
+.livro img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.preco {
+	color: #ff0000;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+button {
+	background-color: #ff0000;
+	color: #fff;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+  }
+
+a {
+	font-family: sans-serif;
+	text-decoration: none;
+  }
+  
+  .header {
+	background: rgb(211, 0, 0);
+	padding-inline: 16px;
+  }
+  
+  .nav {
+	max-width: 1280px;
+	height: 70px;
+	margin-inline: auto;
+  
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .logo {
+	font-size: 48px;
+  }
+  
+  .nav-list {
+	display: flex;
+	gap: 32px;
+	list-style: none;
+  }
+  
+  .nav-list a {
+	font-size: 18px;
+	color: #fff;
+	padding-block: 16px;
+  }
+  
+  .hero {
+	height: calc(100vh - 70px);
+	background: center / cover no-repeat url("./bg.jpg");
+  }
+  
+  .hamburger {
+	display: none;
+	border: none;
+	background: none;
+	border-top: 3px solid #fff;
+	cursor: pointer;
+  }
+  
+  .hamburger::after,
+  .hamburger::before {
+	content: " ";
+	display: block;
+	width: 30px;
+	height: 3px;
+	background: #fff;
+	margin-top: 5px;
+	position: relative;
+	transition: 0.3s;
+  }
+  
+  /* hamburger */
+  @media (max-width: 750px) {
+	.hamburger {
+	  display: block;
+	  z-index: 1;
+	}
+  
+	.nav-list {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100vw;
+	  height: 100vh;
+	  background: rgb(214, 3, 3);
+	  clip-path: circle(100px at 90% -15%);
+	  transition: 1s ease-out;
+  
+	  flex-direction: column;
+	  justify-content: space-around;
+	  align-items: center;
+	  gap: 0;
+  
+	  pointer-events: none;
+	}
+  
+	.nav-list a {
+	  font-size: 24px;
+	  opacity: 0;
+	}
+  
+	.nav-list li:nth-child(1) a {
+	  transition: 0.5s 0.2s;
+	}
+  
+	.nav-list li:nth-child(2) a {
+	  transition: 0.5s 0.4s;
+	}
+  
+	.nav-list li:nth-child(3) a {
+	  transition: 0.5s 0.6s;
+	}
+  
+	/* Estilos ativos */
+  
+	.nav.active .nav-list {
+	  clip-path: circle(1500px at 90% -15%);
+	  pointer-events: all;
+	}
+  
+	.nav.active .nav-list a {
+	  opacity: 1;
+	}
+  
+	.nav.active .hamburger {
+	  position: fixed;
+	  top: 26px;
+	  right: 16px;
+	  border-top-color: transparent;
+	}
+  
+	.nav.active .hamburger::before {
+	  transform: rotate(135deg);
+	}
+  
+	.nav.active .hamburger::after {
+	  transform: rotate(-135deg);
+	  top: -7px;
+	}
+  }
+
 
 
 @media(max-width:750px){
@@ -221,6 +423,99 @@ a{
     .box:last-child {
         margin-right: 0; /* Remove a margem direita da última caixa */
     }
+
+	section#home1{
+		background-image: url(img/HSEFuc.jpg);
+		background-position: 32%;
+	}
+
+	body {
+		margin: 0;
+		font-family: 'Arial', sans-serif;
+	}
+	
+	.navbar {
+		background-color: #333;
+		overflow: hidden;
+	}
+	
+	.navbar a {
+		float: left;
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+	
+	.menu-toggle {
+		display: none;
+		color: white;
+		font-size: 20px;
+		cursor: pointer;
+	}
+	
+	.menu {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+	
+	.menu li {
+		float: left;
+	}
+	
+	.menu a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+	
+	@media screen and (max-width: 600px) {
+		.navbar a:not(:first-child), .menu a:not(:first-child) {
+			display: none;
+		}
+	
+		.navbar a.icon, .menu a.icon {
+			float: right;
+			display: block;
+		}
+	}
+	
+	@media screen and (max-width: 600px) {
+		.navbar.responsive, .menu.responsive {
+			position: relative;
+		}
+	
+		.navbar.responsive a.icon, .menu.responsive a.icon {
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	
+		.navbar.responsive a, .menu.responsive a {
+			float: none;
+			display: block;
+			text-align: left;
+		}
+	
+		.menu {
+			width: 100%;
+			display: none;
+		}
+	
+		.menu-toggle {
+			display: block;
+		}
+	
+		.menu.responsive {
+			display: block;
+		}
+	}
+	
 }
 
 
@@ -784,5 +1079,9 @@ body {
     .box:last-child {
         margin-right: 0; /* Remove a margem direita da última caixa */
     }
+
+	.hamburguer{
+		display: none;
+	}
 
 }

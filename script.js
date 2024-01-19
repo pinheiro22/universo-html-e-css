@@ -36,3 +36,8 @@ window.onscroll = () =>{
     cartItem.classList.remove('active');
 }
   
+
+function toggleMenu() {
+    var menu = document.querySelector('.menu');
+    menu.classList.toggle('responsive');
+}
