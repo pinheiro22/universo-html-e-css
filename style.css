@@ -113,7 +113,7 @@ a{
     .hamburger.active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
     }
-    .hamburger.active .bar:nth-child(6){
+    .hamburger.active .bar:nth-child(4){
         transform: translateY(-8px) rotate(45deg);
     }
     .nav-menu{
